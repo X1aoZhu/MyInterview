@@ -1,6 +1,7 @@
 package com.zhu.interview.cas;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * CAS Demo
@@ -15,7 +16,6 @@ public class CasDemo {
         System.out.println(atomicInteger.compareAndSet(5, 2020) + "\t" + atomicInteger.get());
 
         atomicInteger.getAndIncrement();
-
 
     }
 }
