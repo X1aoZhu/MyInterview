@@ -19,7 +19,7 @@ public class SingletonLock {
 
 class Singleton {
 
-    private static Singleton singleton = null;
+    private volatile static Singleton singleton = null;
 
     private Singleton() {
     }
